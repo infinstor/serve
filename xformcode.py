@@ -11,4 +11,4 @@ for x in range(1, len(sys.argv)):
 if (not model_run_id):
     raise Exception('need model_run_id')
 
-subprocess.run(['/opt/conda/bin/mlflow', 'models', 'serve', '-m', 'runs:/' + model_run_id + '/model', '-h', '0.0.0.0'], env=os.environ)
+subprocess.run(['/home/ec2-user/anaconda3/bin/mlflow', 'models', 'serve', '-m', 'runs:/' + model_run_id + '/model', '-h', '0.0.0.0'], env=os.environ)
